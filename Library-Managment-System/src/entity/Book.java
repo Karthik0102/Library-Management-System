@@ -1,4 +1,4 @@
-package Entity;
+package entity;
 
 public class Book {
 
@@ -12,7 +12,7 @@ public class Book {
 		super();
 	}
 
-	public Book(int id, String title, String author, String publisher, boolean isAvailable) {
+	public Book(int id, String title, String author, String publisher) {
 		super();
 		this.id = id;
 		this.title = title;
@@ -63,8 +63,8 @@ public class Book {
 
 	// get the details of the book
 	public String getBookDetails() {
-		return "Book Id " + id + "/nTitle " + title + "/nAuthor " + author + "/nPublisher " + publisher
-				+ "/nIs Available " + isAvailable;
+		return "Book Id: " + id + "\nTitle: " + title + "\nAuthor: " + author + "\nPublisher: " + publisher
+				+ "\nIs Available: " + isAvailable;
 	}
 
 	// to check if book is available
